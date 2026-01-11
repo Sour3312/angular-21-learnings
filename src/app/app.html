@@ -1,1 +1,14 @@
 <h1>{{title()}}</h1>
+
+<p>{{name()}}</p>
+<input type="text" [value]=" name()" (input)="setValue($event.target.value)">
+<button type="button" (click)="reset()">reset</button>
+
+<!-- getter n setter -->
+ <!-- <p>{{userName()}}</p> -->
+ <p>{{uName}}</p>
+ <input type="text" [(ngModel)]="uName">
+
+ <p>{{details}}</p>
+ <input type="text" [(ngModel)]="details">
+
