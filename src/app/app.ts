@@ -1,10 +1,10 @@
 import { Component, signal, WritableSignal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { mannual } from "./component/mannual";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule],
+  imports: [FormsModule, mannual],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
